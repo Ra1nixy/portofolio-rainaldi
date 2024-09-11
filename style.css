@@ -440,3 +440,78 @@ p {
     margin: 5px 0;
     font-size: 16px;
 }
+/* Aturan responsif untuk ukuran mobile seperti iPhone 13 (potrait) */
+@media (max-width: 390px) {
+    /* Global settings */
+    body, html {
+        width: 100%;
+        overflow-x: hidden; /* Hindari scroll horizontal */
+    }
+
+    /* Section padding adjustment for smaller screens */
+    section {
+        padding: 3rem 5%;
+    }
+
+    /* Home section adjustment */
+    .home {
+        flex-direction: column;
+        margin: 3rem 0;
+        padding: 0 1rem; /* Kurangi padding untuk lebih banyak ruang */
+    }
+
+    .home-content h1 {
+        font-size: 4rem; /* Sesuaikan ukuran heading */
+    }
+
+    .home-content h3 {
+        font-size: 2rem; /* Ukuran lebih kecil untuk heading sekunder */
+    }
+
+    .home-img img {
+        width: 90vw; /* Sesuaikan ukuran gambar agar pas di layar kecil */
+        margin-top: 2rem;
+    }
+
+    /* Logo dan navigasi */
+    .logo {
+        font-size: 2.4rem; /* Sesuaikan ukuran logo */
+    }
+
+    nav a {
+        font-size: 1.6rem; /* Ukuran font lebih kecil untuk navigasi */
+        margin-left: 2rem;
+    }
+
+    /* Kontak section */
+    #contact {
+        padding: 4rem 5%;
+    }
+
+    .contact-info p {
+        font-size: 1.6rem; /* Kurangi ukuran font untuk lebih terbaca */
+    }
+
+    .contact-actions a {
+        font-size: 1.6rem; /* Ukuran font lebih kecil pada tombol */
+        padding: 0.8rem 1.5rem;
+    }
+
+    /* Bagian lain seperti skills, education, experience */
+    .skill-container, .education-container {
+        padding: 0 1rem;
+    }
+
+    .skill {
+        width: 100%; /* Pastikan setiap skill bar mengambil lebar penuh */
+    }
+
+    .education-item {
+        width: 100%; /* Pastikan setiap item pendidikan mengambil lebar penuh */
+    }
+}
+
+/* Pastikan tidak ada scroll horizontal di mode potret */
+body, html {
+    overflow-x: hidden; /* Hindari geser kanan-kiri pada layar kecil */
+}
